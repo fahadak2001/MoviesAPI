@@ -1,0 +1,49 @@
+body {
+    background-color: rgb(126, 125, 125) !important; 
+    color: rgb(245, 245, 245) !important;
+}
+
+.movies {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movies > div {
+    width: 25%; 
+    padding: 20px; 
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.movies > div:hover {
+    transform: scale(1.1); /* Increase size by 20% on hover */
+    z-index: 1; /* Ensure hovered movie is on top */
+
+}
+    
+
+.movies img {
+    width: 100%; 
+    height: auto;
+}
+
+.displaymovie{
+    display: flex;
+    position: absolute;
+    gap: 20px;
+}
+
+.displaymovie img {
+    width: 25%;
+    height: 25%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-left: 20%;
+    margin-top: 2%;
+}
+
+.movieinfo{
+    margin-top: 2%;
+    width: 40%;
+
+}
